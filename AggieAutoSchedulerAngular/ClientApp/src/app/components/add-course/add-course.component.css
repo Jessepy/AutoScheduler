@@ -1,0 +1,19 @@
+.subject-course-div {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.subject-course-form {
+  padding-top: 20px;
+}
+
+.subject-course {
+  display: inline-block;
+  width: 80%;
+  padding-right: 20px;
+}
+
+.subject-course > * {
+  position: center;
+  width: 80%;
+}

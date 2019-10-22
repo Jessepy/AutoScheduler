@@ -1,0 +1,46 @@
+<mat-accordion>
+  <mat-expansion-panel *ngFor="let course of courses">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{course.subject}} {{course.courseNumber}} - {{course.crn}}
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <span>Title: {{course.title}}</span><br />
+    <span>Section: {{course.sectionNumber}}</span><br />
+    <span>Credits: {{course.credits}}</span><br /><br />
+    <mat-expansion-panel *ngIf="course.monday">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Monday
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <span *ngFor="let period of course.monday">
+        Location: {{period.location}} <br />
+        Professor: {{period.professor}} <br />
+        Time: {{period.startTime | date: 'shortTime'}} - {{period.endTime | date: 'shortTime'}}<br /><br />
+      </span>
+    </mat-expansion-panel>
+    <mat-expansion-panel *ngIf="course.monday">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Monday
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <span *ngFor="let period of course.monday">
+        Location: {{period.location}} <br />
+        Professor: {{period.professor}} <br />
+        Time: {{period.startTime | date: 'shortTime'}} - {{period.endTime | date: 'shortTime'}}<br /><br />
+      </span>
+    </mat-expansion-panel>
+
+  </mat-expansion-panel>
+  <mat-expansion-panel *ngFor="let scn of subjectCoursePairs">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{scn.subject}} {{scn.courseNumber}}
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+  </mat-expansion-panel>
+</mat-accordion>

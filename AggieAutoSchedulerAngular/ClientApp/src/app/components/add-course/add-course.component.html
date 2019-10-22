@@ -1,0 +1,14 @@
+<div class="subject-course-div">
+  <form class="subject-course-form">
+    <mat-form-field class="subject-course">
+      <input #inputField [(ngModel)]="inputValue" (input)="search(inputValue); validateInput(inputValue)" name="inputField" matInput [matAutocomplete]="auto" placeholder="Enter Subject/Course Number or CRN" />
+    </mat-form-field>
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option #optionBox *ngFor="let option of options$ | async" (click)="validateInput(inputValue)">
+        <div *ngIf="option.crn" (click)="optionBox.value = option.crn.toString()" >{{option.crn}}</div>
+        <div *ngIf="option.subject && option.courseNumber" (click)="optionBox.value = option.subject + ' ' + option.courseNumber.toString(); validateInput();">{{option.subject}} {{option.courseNumber}}</div>
+      </mat-option>
+    </mat-autocomplete>
+    <button *ngIf="!invalidInput" type="button" mat-button (click)="addCourse(inputValue)">Add</button>
+  </form>
+</div>

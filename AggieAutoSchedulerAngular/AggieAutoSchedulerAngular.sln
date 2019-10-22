@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AggieAutoSchedulerAngular", "AggieAutoSchedulerAngular.csproj", "{C433EB3C-9DAD-49B9-A44E-9314537D885C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AAS.DB", "..\AAS.DB\AAS.DB.csproj", "{F5225614-C6EC-4392-A45D-D335327E1009}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AAS.ScheduleMaker", "..\AAS.ScheduleMaker\AAS.ScheduleMaker.csproj", "{388451D5-A19B-4DED-BF4E-B7113DD78D2C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C433EB3C-9DAD-49B9-A44E-9314537D885C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C433EB3C-9DAD-49B9-A44E-9314537D885C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C433EB3C-9DAD-49B9-A44E-9314537D885C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C433EB3C-9DAD-49B9-A44E-9314537D885C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5225614-C6EC-4392-A45D-D335327E1009}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5225614-C6EC-4392-A45D-D335327E1009}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5225614-C6EC-4392-A45D-D335327E1009}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5225614-C6EC-4392-A45D-D335327E1009}.Release|Any CPU.Build.0 = Release|Any CPU
+		{388451D5-A19B-4DED-BF4E-B7113DD78D2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{388451D5-A19B-4DED-BF4E-B7113DD78D2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{388451D5-A19B-4DED-BF4E-B7113DD78D2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{388451D5-A19B-4DED-BF4E-B7113DD78D2C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {47A8FAA5-68CC-4C49-B49C-792DB6FF0468}
+	EndGlobalSection
+EndGlobal
